@@ -23,15 +23,6 @@ The architecture is designed for:
 
 User → Route53 → ALB (Public Subnets) → ECS Service → ECS Tasks → EC2 (ASG in Private Subnets)
 
----
-
-## How to Run
-
-```bash
-terraform init
-terraform plan -var-file="test.tfvars"
-terraform apply -var-file="test.tfvars"
-
 ## AI / Tools Used
 
 AI tools were used to assist with structuring, validation, and improving clarity of the solution. All outputs were reviewed, understood, and adapted to match production-grade requirements.
@@ -71,3 +62,14 @@ Using AI tools helped:
 - Improve clarity and communication of the architecture
 
 However, correctness, security, and design decisions were **carefully verified before inclusion**
+
+---
+
+## How to Run
+
+```bash
+terraform init
+terraform plan -var-file="test.tfvars"
+terraform apply -var-file="test.tfvars"
+
+---
