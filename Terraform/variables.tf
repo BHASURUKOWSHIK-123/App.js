@@ -56,17 +56,17 @@ variable "suffix" {
 variable "certificate_arn" {
   description = "ACM SSL certificate ARN for HTTPS"
   type        = string
-  default     = ""  # Optional, only needed for HTTPS
+  default     = ""  
 }
 
 variable "ecs_instance_profile_arn" {
   description = "IAM instance profile ARN for ECS instances"
   type        = string
-  default     = ""  # Optional, can use default ECS role if not provided
+  default     = ""  
 }
 
 variable "private_route_tables" {
   description = "List of route table IDs for VPC endpoints"
   type        = list(string)
-  default     = []  # Optional, only needed if using VPC endpoints
+  default     = []  
 }
